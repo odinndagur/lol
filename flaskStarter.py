@@ -22,7 +22,7 @@ def upload_filel():
         file = os.path.join(app.config['UPLOAD_FOLDER'],'input.pdf')
         files = {'file':file}
         #resp = requests.get('http://127.0.0.1:8001/uploader')
-        return filename
+        return 'loll'
 if __name__ == "__main__":
         port = int(os.environ.get("PORT", 5000))
         app.run(host='0.0.0.0', port=port)
