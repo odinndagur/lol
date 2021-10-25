@@ -14,7 +14,7 @@ def response_page():
 @app.route('/uploader', methods = ['GET', 'POST'])
 def upload_filel():
    if request.method == 'POST':
-        f = request.files['file']
+        f = request.files['fil
         print(f)
         filename = f.filename
         # f.save(os.path.join(app.config['UPLOAD_FOLDER'],filename))
