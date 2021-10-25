@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
+app.config['UPLOAD_FOLDER'] = './'
 @app.route('/')
 def first_page():
     return render_template('upload.html')
